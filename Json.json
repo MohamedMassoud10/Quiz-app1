@@ -1,0 +1,60 @@
+[
+  {
+    "title": "Why We Use <br> Element",
+    "answer":["To Make Text Bold","To Make Text Italic","No Its For Anchor Tag <a>","To Add Breakline"],
+    "right_answer": "To Make Text Italic"
+  },
+  {
+    "title": "Is <img> Element Has Attribute href",
+    "answer":["Yes","No Its For Anchor Tag <a>","All Elements Has This Attribute","Answer 1 And 3 Is Right","To Create Horizontal Line"],
+    "right_answer": "No Its For Anchor Tag <a>"
+  },
+  {
+    "title": "How Can We Make Element Text Bold",
+    "answer":["Putting It Inside <b> Tag","Putting It Inside <strong> Tag","Customizing It With Font-Weight Property In CSS","All Answers Is Right"],
+    "right_answer": "All Answers Is Right"
+  },
+  {
+    "title": "What Is The Right Hierarchy For Creating Part Of Page",
+    "answer":["<h2> Then <p> Then <h1> Then <p> Then <h3> Then <p> Then <img>","<h1> Then <p> Then <h3> Then <p> Then <h2> Then <p> Then <img>","<h2> Then <p> Then <h3> Then <p> Then <h1> Then <p> Then <img>","All Solutions Is Wrong"],
+    "right_answer": "All Solutions Is Wrong"
+  },
+  {
+    "title": "How Can We Include External Page Inside Our HTML Page",
+    "answer":["By Using Include in HTML","By Using Load In HTML", "By Using iFrame Tag","All Solutions Is Wrong"],
+    "right_answer": "By Using iFrame Tag"
+  },
+  {
+    "title": "What Is The Tag That Not Exists in HTML",
+    "answer":["<object>","<basefont>","<abbr>","All Tags Is Exists in HTML"],  
+    "right_answer": "All Tags Is Exists in HTML"
+  },
+  {
+    "title": "How We Specify Document Type Of HTML5 Page",
+    "answer":["<DOCTYPE html>",
+"<DOCTYPE html5>",
+"<!DOCTYPE html5>",
+"<!DOCTYPE html>"],
+        "right_answer":"<!DOCTYPE html>" 
+  },
+  {
+    "title": "What Is The Element Thats Not Exists in HTML5 Semantics",
+    "answer":["<article>",
+"<section>",
+"<blockquote>",
+"<aside>"],
+    "right_answer": "<blockquote>"
+  },
+  {
+    "title": "In HTML Can We Use This Way To Add Attributes",
+    "answer":["<div class='class-name'>","<div class=class-name>","<div class=\"class-name\">","All Is Right"],
+    "right_answer": "All Is Right"
+  },
+  {
+    "title": "In HTML Can We Use This Way To Add Attributes",
+    "answer":["<div class='class-name'>",
+"<div class=class-name>",
+"<div class=\"class-name\">", "All Is Right"],
+    "right_answer": "All Is Right"
+  }
+]

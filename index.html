@@ -1,0 +1,92 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" href="imges/toDO.png">
+    <link rel="stylesheet" href="all.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <title>Quiz App</title>
+</head>
+<body>
+    <div class="container">
+        <!-- Button Start -->
+        <div class="start">
+            <div class="btn">
+                Start Quiz
+            </div>
+        </div>
+        <!-- Button Start -->
+    
+        <!-- Start Rules  -->
+        <div class="Rules-modal">
+            <div class="modal-content">
+                <h2>Some Rules Of This Quiz</h2><hr>
+                <div class="rules">
+                    <p>1. You will have only <span>15 seconds</span> per each question.</p>
+                    <p>2. Once you slect your answer, it can't be undone.</p>
+                    <p>3. You can't select any option once time goes off.</p>
+                    <p>4. You can't exit from The Quiz while you're playing.</p>
+                    <p>5. You'll get points on basis of your correct answers.</p><hr>
+                <div class="buttons">
+                    <div class="exit-butn">
+                        Exist Quiz
+                    </div>
+                    <div class="continue">
+                    Continue
+                    </div>
+                </div>
+            </div>
+        </div>
+        </div>
+        <!-- End Rules  -->
+        <!-- Start Question -->
+        <div class="quiz-area">
+            <div class="header">
+                <div class="title">Awesome Quiz Application</div>
+                <div class="timer">Time Left <span  class="qC"></span></div>
+            </div><hr>
+            <div class="answer-area">
+                <h2>Why We Use &lt;br&gt;Element</h2>
+                <div class="answers" >
+                    <div class="answer">To Make Text Bold </div>
+                    <div class="answer" id="right" >To Make Text Italic </div>
+                    <div class="answer">To Add Breakline</div>
+                    <div class="answer">To Create Horizontal Line</div>
+                    
+                </div>
+                <!-- <i class="fa-solid fa-circle-xmark"></i>
+                <i class="fa-solid fa-circle-check"></i> -->
+                <div class="answers">
+                    
+                </div>
+            </div><hr>
+            <div class="footer">
+                <div class="counter">
+                    <span class="Q-C">1</span> of <span class="footer-conter"> </span> Questions
+                </div>
+                <div class="btn-next">
+                    Next Que
+                </div>
+            </div>
+        </div>
+        <!--  End Question  -->
+        <!-- finally -->
+        <div class="finally">
+            <i class="fa-solid fa-crown"></i>
+            <div class="text">
+                You've completed the Quiz ! and congarts ! </div>
+            <div class="btns">
+                <div class="btn-f">Replay Quiz</div>
+                <div class="btn-f">Quit Quiz</div>
+            </div>
+
+        </div>
+    </div>
+    <script src="master.js"></script>
+    <script src="https://smtpjs.com/v3/smtp.js"></script>
+</body>
+</html>

@@ -1,0 +1,238 @@
+:root{
+    --primary-color: #4285F4;
+    --border-ridus: 5px;
+    --pading: 10px;
+}
+body{
+    background-color: #343a40;
+}
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+.container{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+}
+.container .start{
+    justify-content: center;
+        display: flex;
+        align-items: center;
+}
+.container .btn{
+        padding: var(--pading);
+        background-color: var(--primary-color);
+        border-radius: var(--border-ridus);
+        color: white;
+        text-align: center;
+        cursor: pointer;
+        transition: .7s ;
+        
+}
+.container .btn:hover{
+    background-color: black;
+}
+/* Start Rules Styling */
+.Rules-modal{
+border-radius: var(--border-ridus);
+    background-color: white;
+    padding: var(--pading);
+    display: none;
+    transform: translate(10px, 125px);
+    transition: 1s;
+    animation: top .8s steps(15) forwards;
+}
+@keyframes top{
+    0%{
+        opacity: 0;
+    }
+    60%{
+        transform: translate(10px, 50px);
+        opacity: .5;
+    }
+    100%{
+        transform: translate(10px, 10px);
+        opacity: 1;
+    }
+}
+.Rules-modal .modal-content .rules span{
+    color:var(--primary-color) ;
+}
+.Rules-modal .modal-content h2,
+.Rules-modal .modal-content .rules p
+{
+padding: var(--pading);
+}
+.Rules-modal .modal-content .rules p{
+font-weight: 600;
+}
+.Rules-modal .modal-content h2::after{
+content: "";
+}
+.Rules-modal .modal-content .buttons{
+display: flex;
+justify-content: flex-end;
+gap: 5px;
+margin-top: 5px;
+}
+.Rules-modal .modal-content .buttons .exit-butn,.continue{
+    cursor: pointer;
+    padding: var(--pading);
+}
+.Rules-modal .modal-content .buttons .exit-butn{
+    border: 1px solid var(--primary-color);
+    color: var(--primary-color);
+    border-radius: var(--border-ridus);
+    transition: .3s;
+}
+.Rules-modal .modal-content .buttons .continue{
+    color: white;
+    background-color: var(--primary-color);
+    border-radius: var(--border-ridus);
+    transition: .3s;
+}
+.Rules-modal .modal-content .buttons .exit-butn:hover{
+    color: white;
+    background-color: var(--primary-color);
+    border-radius: var(--border-ridus);
+}
+@media (min-width: 1119px){
+    .container{
+        width: 45%;
+    }
+}
+@media (min-width: 992px) and (max-width:1199px) {
+    .container {
+        width: 80%;
+    }
+}
+@media (min-width: 767px) and (max-width:1199px) {
+    .container {
+        width: 80%;
+    }
+}
+@media (min-width: 541px) and (max-width:760px) {
+    .container {
+            width: 100%;
+                left: 48.1%;
+        }
+}
+@media (max-width: 541px){
+    .container{
+        width: 98%;
+        left: 47%;
+    }
+}
+@media (max-width: 381px) {
+    .quiz-area .header .timer{
+        display: flex;
+            align-items: center;
+            text-align: center;
+    }
+}
+/* End Rules Styling */
+/* Start Quiz Area */
+.quiz-area{
+    background-color: white;
+    border-radius: var(--border-ridus);
+    display: none;
+    transform: translate(10px, 125px);
+    animation: top .8s steps(15) forwards;
+}
+.quiz-area .header{
+    padding: var(--pading);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.quiz-area .header .title{
+font-size: 20px;
+font-weight: 600;
+}
+.quiz-area .header .timer{
+    background-color: var(--primary-color);
+    padding: var(--pading);
+    border-radius: var(--border-ridus);
+}
+.quiz-area .header .timer span{
+    padding: 5px 10px;
+    background: #434040;
+    color: white;
+    border-radius: 6px;
+    margin-left: 7px;
+}
+.quiz-area .answer-area{
+    padding: var(--pading);
+}
+.quiz-area .answer-area h2{
+padding-left: 10px;
+margin-bottom: 5px;
+}
+.quiz-area .answer-area .answers{
+    padding: var(--pading);
+    cursor: pointer;
+}
+.quiz-area .answer-area .answers .answer{
+    padding: var(--pading);
+    border-radius: var(--border-ridus);
+    border: 1px solid black;
+    margin-bottom: 9px;
+}
+.quiz-area .answer-area .answers .answer:hover{
+    background-color: var(--primary-color);
+    color: white;
+}
+.quiz-area .footer{
+display: flex;
+justify-content: space-between;
+align-items: center;
+padding: 10px;
+}
+.quiz-area .footer .btn-next{
+    padding: var(--pading);
+    background-color: var(--primary-color);
+    border-radius: var(--border-ridus);
+    color: white;
+    text-align: center;
+    cursor: pointer;
+    transition: .7s;
+}
+/* finally */
+.finally {
+    display: none;
+    text-align: center;
+    padding: var(--pading);
+    background: white;
+    border-radius: var(--border-ridus);
+}
+.finally i{
+    color: var(--primary-color);
+    font-size: 100px;
+    padding: var(--pading);
+}
+.finally .text{
+font-size: 15px;
+font-weight: 700;
+padding: var(--pading);
+}
+.finally .btns{
+padding: 10px;
+display: flex;
+justify-content: space-between;
+}
+.finally .btns .btn-f{
+    padding: var(--pading);
+    background-color: var(--primary-color);
+    border-radius: var(--border-ridus);
+    color: white;
+    text-align: center;
+    cursor: pointer;
+    transition: .7s;
+}
+
+/* End Quiz Area */
+
+
